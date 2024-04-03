@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lbycpd2_sofdesg.OverviewController">
+   <children>
+      <Text layoutX="329.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Master Siomai Inventory Manager" wrappingWidth="362.173828125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="462.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Overview" wrappingWidth="75.173828125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="40.0" layoutY="40.0" mnemonicParsing="false" onAction="#backToMenu" text="Back to menu" />
+      <MenuButton fx:id="monthMenuButton" layoutX="110.0" layoutY="357.0" mnemonicParsing="false" text="Select Month">
+      </MenuButton>
+      <MenuButton fx:id="quarterMenuButton" layoutX="84.0" layoutY="475.0" mnemonicParsing="false" text="Select Quarter">
+      </MenuButton>
+      <MenuButton fx:id="yearMenuButton" layoutX="161.0" layoutY="610.0" mnemonicParsing="false" text="Select Year">
+      </MenuButton>
+      <TextField fx:id="monthlySales" editable="false" layoutX="139.0" layoutY="406.0" />
+      <TextField fx:id="quarterlySales" editable="false" layoutX="138.0" layoutY="522.0" />
+      <TextField fx:id="yearlySales" editable="false" layoutX="138.0" layoutY="663.0" />
+      <Text layoutX="142.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monthly Performance" wrappingWidth="145.173828125">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="139.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quarterly Performance" wrappingWidth="152.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="147.0" layoutY="591.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yearly Performance" wrappingWidth="132.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="633.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stocks Overview" wrappingWidth="115.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="porkShrimpQuantity" editable="false" layoutX="531.0" layoutY="266.0" />
+      <TextField fx:id="japaneseQuantity" editable="false" layoutX="531.0" layoutY="328.0" />
+      <TextField fx:id="sharksfinQuantity" editable="false" layoutX="531.0" layoutY="395.0" />
+      <TextField fx:id="chickenQuantity" editable="false" layoutX="531.0" layoutY="459.0" />
+      <TextField fx:id="beefQuantity" editable="false" layoutX="531.0" layoutY="523.0" />
+      <Text layoutX="556.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pork and Shrimp" wrappingWidth="103.0" />
+      <Text layoutX="576.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Japanese" wrappingWidth="61.0" />
+      <Text layoutX="577.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sharksfin" wrappingWidth="61.0" />
+      <Text layoutX="583.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken" wrappingWidth="49.0" />
+      <Text layoutX="593.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beef" wrappingWidth="29.0" />
+      <Text layoutX="743.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <TextField fx:id="porkShrimpCondition" editable="false" layoutX="701.0" layoutY="266.0" />
+      <TextField fx:id="japaneseCondition" editable="false" layoutX="700.0" layoutY="328.0" />
+      <TextField fx:id="sharksfinCondition" editable="false" layoutX="700.0" layoutY="395.0" />
+      <TextField fx:id="chickenCondition" editable="false" layoutX="700.0" layoutY="459.0" />
+      <TextField fx:id="beefCondition" editable="false" layoutX="700.0" layoutY="523.0" />
+      <Text layoutX="743.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <Text layoutX="743.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <Text layoutX="743.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <Text layoutX="742.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <MenuButton fx:id="monthYearMenuButton" layoutX="243.0" layoutY="357.0" mnemonicParsing="false" text="Select Year" />
+      <MenuButton fx:id="quarterYearMenuButton" layoutX="242.0" layoutY="475.0" mnemonicParsing="false" text="Select Year" />
+      <TextField fx:id="tunaQuantity" editable="false" layoutX="531.0" layoutY="586.0" />
+      <Text layoutX="593.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuna" wrappingWidth="29.0" />
+      <TextField fx:id="tunaCondition" editable="false" layoutX="700.0" layoutY="586.0" />
+      <Text layoutX="742.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <TextField fx:id="bottledChiliQuantity" editable="false" layoutX="531.0" layoutY="646.0" />
+      <Text layoutX="574.0" layoutY="638.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bottled Chili" wrappingWidth="67.0" />
+      <TextField fx:id="bottledChiliCondition" editable="false" layoutX="700.0" layoutY="646.0" />
+      <Text layoutX="742.0" layoutY="638.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <TextField fx:id="cupQuantity" editable="false" layoutX="531.0" layoutY="705.0" />
+      <Text layoutX="577.0" layoutY="697.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12oz Cup" wrappingWidth="60.99999999999977" />
+      <TextField fx:id="cupCondition" editable="false" layoutX="700.0" layoutY="705.0" />
+      <Text layoutX="742.0" layoutY="697.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <MenuButton fx:id="selectedDayMonthButton" layoutX="59.0" layoutY="232.0" mnemonicParsing="false" text="Select Month" />
+      <TextField fx:id="dailySales" editable="false" layoutX="139.0" layoutY="281.0" />
+      <Text layoutX="117.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Performance on Selected Day" wrappingWidth="195.8404541015625">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <MenuButton fx:id="selectedDayYearButton" layoutX="300.0" layoutY="232.0" mnemonicParsing="false" text="Select Year" />
+      <MenuButton fx:id="selectedDayMenuButton" layoutX="184.0" layoutY="232.0" mnemonicParsing="false" text="Select Day" />
+   </children>
+</AnchorPane>

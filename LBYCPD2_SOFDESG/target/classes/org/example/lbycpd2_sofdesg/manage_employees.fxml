@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lbycpd2_sofdesg.ManageEmployeesController">
+   <children>
+      <Text layoutX="349.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Master Siomai Inventory Manager" wrappingWidth="362.173828125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="450.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Employees" wrappingWidth="160.173828125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="397.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Base Price" wrappingWidth="69.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="573.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discounted Price" wrappingWidth="115.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="60.0" layoutY="60.0" mnemonicParsing="false" onAction="#backToMenu" text="Back to menu" />
+      <MenuButton fx:id="employeeMenuButton" layoutX="112.0" layoutY="341.0" mnemonicParsing="false" text="Select Employee">
+      </MenuButton>
+      <TextField fx:id="employeeNameField" layoutX="808.0" layoutY="129.0" />
+      <Button fx:id="addEmployeeButton" layoutX="836.0" layoutY="174.0" mnemonicParsing="false" onAction="#addEmployee" text="Add Employee" />
+      <Text layoutX="79.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales on selected shift" wrappingWidth="184.173828125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="totalSalesOnSelectedShift" editable="false" layoutX="97.0" layoutY="480.0" />
+      <MenuButton fx:id="selectMonthButton" layoutX="14.0" layoutY="384.0" mnemonicParsing="false" text="Select Month">
+      </MenuButton>
+      <MenuButton fx:id="selectDayButton" layoutX="130.0" layoutY="384.0" mnemonicParsing="false" text="Select Day" />
+      <MenuButton fx:id="selectYearButton" layoutX="238.0" layoutY="384.0" mnemonicParsing="false" text="Select Year" />
+      <TextField fx:id="porkAndShrimpBase" editable="false" layoutX="356.0" layoutY="289.0" />
+      <TextField fx:id="japaneseBase" editable="false" layoutX="356.0" layoutY="351.0" />
+      <TextField fx:id="sharksfinBase" editable="false" layoutX="356.0" layoutY="418.0" />
+      <TextField fx:id="chickenBase" editable="false" layoutX="356.0" layoutY="482.0" />
+      <TextField fx:id="beefBase" editable="false" layoutX="356.0" layoutY="546.0" />
+      <Text layoutX="381.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pork and Shrimp" wrappingWidth="103.0" />
+      <Text layoutX="401.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Japanese" wrappingWidth="61.0" />
+      <Text layoutX="402.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sharksfin" wrappingWidth="61.0" />
+      <Text layoutX="408.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken" wrappingWidth="49.0" />
+      <Text layoutX="418.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beef" wrappingWidth="29.0" />
+      <TextField fx:id="tunaBase" editable="false" layoutX="356.0" layoutY="609.0" />
+      <Text layoutX="418.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuna" wrappingWidth="29.0" />
+      <TextField fx:id="bottledChiliBase" editable="false" layoutX="356.0" layoutY="669.0" />
+      <Text layoutX="399.0" layoutY="661.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bottled Chili" wrappingWidth="67.0" />
+      <TextField fx:id="cupBase" editable="false" layoutX="356.0" layoutY="728.0" />
+      <Text layoutX="402.0" layoutY="720.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12oz Cup" wrappingWidth="60.99999999999977" />
+      <TextField fx:id="porkAndShrimpDiscounted" editable="false" layoutX="555.0" layoutY="289.0" />
+      <TextField fx:id="japaneseDiscounted" editable="false" layoutX="555.0" layoutY="351.0" />
+      <TextField fx:id="sharksfinDiscounted" editable="false" layoutX="555.0" layoutY="418.0" />
+      <TextField fx:id="chickenDiscounted" editable="false" layoutX="555.0" layoutY="482.0" />
+      <TextField fx:id="beefDiscounted" editable="false" layoutX="555.0" layoutY="546.0" />
+      <Text layoutX="580.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pork and Shrimp" wrappingWidth="103.0" />
+      <Text layoutX="600.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Japanese" wrappingWidth="61.0" />
+      <Text layoutX="601.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sharksfin" wrappingWidth="61.0" />
+      <Text layoutX="607.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken" wrappingWidth="49.0" />
+      <Text layoutX="617.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beef" wrappingWidth="29.0" />
+      <TextField fx:id="tunaDiscounted" editable="false" layoutX="555.0" layoutY="609.0" />
+      <Text layoutX="617.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuna" wrappingWidth="29.0" />
+      <TextField fx:id="bottledChiliDiscounted" editable="false" layoutX="555.0" layoutY="669.0" />
+      <Text layoutX="598.0" layoutY="661.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bottled Chili" wrappingWidth="67.0" />
+      <TextField fx:id="cupDiscounted" editable="false" layoutX="555.0" layoutY="728.0" />
+      <Text layoutX="601.0" layoutY="720.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12oz Cup" wrappingWidth="60.99999999999977" />
+   </children>
+</AnchorPane>

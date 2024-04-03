@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lbycpd2_sofdesg.MainMenuController">
+   <children>
+      <Text layoutX="319.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Master Siomai Inventory Manager" wrappingWidth="362.173828125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="453.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Main Menu" wrappingWidth="94.173828125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="467.0" layoutY="250.0" mnemonicParsing="false" onAction="#onOverviewClick" text="Overview" />
+      <Button layoutX="453.0" layoutY="291.0" mnemonicParsing="false" onAction="#onUpdateStockClick" text="Update Stocks" />
+      <Button layoutX="440.0" layoutY="330.0" mnemonicParsing="false" onAction="#onManageEmployeesClick" text="Manage Employees" />
+      <Button layoutX="435.0" layoutY="377.0" mnemonicParsing="false" onAction="#onOrderSuppliersClick" text="Order From Suppliers" />
+      <Button layoutX="462.0" layoutY="423.0" mnemonicParsing="false" onAction="#onEditStocksClick" text="Edit Stocks" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lbycpd2_sofdesg.OrderSuppliersController">
+   <children>
+      <Text layoutX="349.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Master Siomai Inventory Manager" wrappingWidth="362.173828125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="451.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order to Suppliers" wrappingWidth="158.173828125">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button layoutX="60.0" layoutY="60.0" mnemonicParsing="false" onAction="#backToMenu" text="Back to menu" />
+      <Text layoutX="577.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To Order" wrappingWidth="61.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="696.0" layoutY="342.0" prefHeight="287.0" prefWidth="268.0" />
+      <Button fx:id="orderButton" layoutX="584.0" layoutY="739.0" mnemonicParsing="false" onAction="#order" text="Order" />
+      <Text layoutX="162.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stocks Overview" wrappingWidth="115.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="porkShrimpQuantity" editable="false" layoutX="60.0" layoutY="288.0" />
+      <TextField fx:id="japaneseQuantity" editable="false" layoutX="60.0" layoutY="350.0" />
+      <TextField fx:id="sharksfinQuantity" editable="false" layoutX="60.0" layoutY="417.0" />
+      <TextField fx:id="chickenQuantity" editable="false" layoutX="60.0" layoutY="481.0" />
+      <TextField fx:id="beefQuantity" editable="false" layoutX="60.0" layoutY="545.0" />
+      <Text layoutX="85.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pork and Shrimp" wrappingWidth="103.0" />
+      <Text layoutX="105.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Japanese" wrappingWidth="61.0" />
+      <Text layoutX="106.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sharksfin" wrappingWidth="61.0" />
+      <Text layoutX="112.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken" wrappingWidth="49.0" />
+      <Text layoutX="122.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beef" wrappingWidth="29.0" />
+      <Text layoutX="272.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <TextField fx:id="porkShrimpCondition" editable="false" layoutX="230.0" layoutY="288.0" />
+      <TextField fx:id="japaneseCondition" editable="false" layoutX="229.0" layoutY="350.0" />
+      <TextField fx:id="sharksfinCondition" editable="false" layoutX="229.0" layoutY="417.0" />
+      <TextField fx:id="chickenCondition" editable="false" layoutX="229.0" layoutY="481.0" />
+      <TextField fx:id="beefCondition" editable="false" layoutX="229.0" layoutY="545.0" />
+      <Text layoutX="272.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <Text layoutX="272.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <Text layoutX="272.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <Text layoutX="271.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <TextField fx:id="tunaQuantity" editable="false" layoutX="60.0" layoutY="608.0" />
+      <Text layoutX="122.0" layoutY="599.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuna" wrappingWidth="29.0" />
+      <TextField fx:id="tunaCondition" editable="false" layoutX="229.0" layoutY="608.0" />
+      <Text layoutX="271.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <TextField fx:id="bottledChiliQuantity" editable="false" layoutX="60.0" layoutY="668.0" />
+      <Text layoutX="103.0" layoutY="660.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bottled Chili" wrappingWidth="67.0" />
+      <TextField fx:id="bottledChiliCondition" editable="false" layoutX="229.0" layoutY="668.0" />
+      <Text layoutX="271.0" layoutY="660.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <TextField fx:id="cupQuantity" editable="false" layoutX="60.0" layoutY="727.0" />
+      <Text layoutX="106.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12oz Cup" wrappingWidth="60.99999999999977" />
+      <TextField fx:id="cupCondition" editable="false" layoutX="229.0" layoutY="727.0" />
+      <Text layoutX="271.0" layoutY="719.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Condition" wrappingWidth="67.0" />
+      <TextField fx:id="porkAndShrimpFieldOrder" layoutX="533.0" layoutY="262.0" />
+      <TextField fx:id="japaneseFieldOrder" layoutX="533.0" layoutY="324.0" />
+      <TextField fx:id="sharksfinFieldOrder" layoutX="533.0" layoutY="391.0" />
+      <TextField fx:id="chickenFieldOrder" layoutX="533.0" layoutY="455.0" />
+      <TextField fx:id="beefFieldOrder" layoutX="533.0" layoutY="519.0" />
+      <Text layoutX="558.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pork and Shrimp" wrappingWidth="103.0" />
+      <Text layoutX="578.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Japanese" wrappingWidth="61.0" />
+      <Text layoutX="579.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sharksfin" wrappingWidth="61.0" />
+      <Text layoutX="585.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chicken" wrappingWidth="49.0" />
+      <Text layoutX="595.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Beef" wrappingWidth="29.0" />
+      <TextField fx:id="tunaFieldOrder" layoutX="533.0" layoutY="582.0" />
+      <Text layoutX="595.0" layoutY="573.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuna" wrappingWidth="29.0" />
+      <TextField fx:id="bottledChiliFieldOrder" layoutX="533.0" layoutY="642.0" />
+      <Text layoutX="576.0" layoutY="634.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bottled Chili" wrappingWidth="67.0" />
+      <TextField fx:id="cupFieldOrder" layoutX="533.0" layoutY="701.0" />
+      <Text layoutX="579.0" layoutY="693.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12oz Cup" wrappingWidth="60.99999999999977" />
+   </children>
+</AnchorPane>
